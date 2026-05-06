@@ -1,16 +1,16 @@
-import Image from "next/image";
+// import Image from "next/image";
 import CountUp from "./CountUp";
 
-import { CormorantGaramond, PoppinsFont, RobotoFont } from "@/public/fonts/fonts";
+import { CormorantGaramond, RobotoFont } from "@/public/fonts/fonts";
 const Aboutmesection = () => {
   return (
-    <section className="h-fit bg=[#E8DFD8 p-5 lg:py-20 lg:px-10 flex flex-col gap-10 lg:flex-row">
+    <section className="h-fit bg-[#E8DFD8] p-5 lg:p-25 flex flex-col gap-10 lg:flex-row">
       <div className="heading lg:w-1/2 flex flex-col justify-center">
-        <h2 className={`${CormorantGaramond.className} text-5xl lg:text-6xl text-center lg:text-left`}>
+        <h2 className={`${CormorantGaramond.className} text-5xl lg:text-6xl text-center lg:text-left uppercase`}>
           About Me
         </h2>
         <p
-          className={`${PoppinsFont.className} text-md lg:text-lg text-center lg:text-left mt-3`}
+          className={`${CormorantGaramond.className} text-md lg:text-2xl text-center lg:text-left mt-3`}
         >
           I am a passionate interior designer with a keen eye for detail and a
           commitment to creating spaces that inspire and delight.
