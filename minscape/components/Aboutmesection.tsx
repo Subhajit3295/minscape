@@ -1,22 +1,31 @@
+import Image from "next/image";
 import CountUp from "./CountUp";
 
-import { CormorantGaramond, PoppinsFont } from "@/public/fonts/fonts";
+import { CormorantGaramond, PoppinsFont, RobotoFont } from "@/public/fonts/fonts";
 const Aboutmesection = () => {
   return (
-    <section className="h-fit bg=[#E8DFD8 p-5 flex flex-col gap-10 lg:flex-row">
-      <div className="heading lg:w-1/2">
-        <h2 className={`${CormorantGaramond.className} text-5xl text-center`}>
+    <section className="h-fit bg=[#E8DFD8 p-5 lg:py-20 lg:px-10 flex flex-col gap-10 lg:flex-row">
+      <div className="heading lg:w-1/2 flex flex-col justify-center">
+        <h2 className={`${CormorantGaramond.className} text-5xl lg:text-6xl text-center lg:text-left`}>
           About Me
         </h2>
         <p
-          className={`${PoppinsFont.className} text-md lg:text-lg text-center mt-3`}
+          className={`${PoppinsFont.className} text-md lg:text-lg text-center lg:text-left mt-3`}
         >
           I am a passionate interior designer with a keen eye for detail and a
           commitment to creating spaces that inspire and delight.
         </p>
       </div>
-      <div className="stats flex justify-between gap-5 lg:w-1/2">
-        <div className={`flex flex-col ${PoppinsFont.className}`}>
+      <div className="stats flex lg:flex-col justify-between md:justify-around lg:items-center lg:gap-10 gap-5 lg:w-1/2 relative">
+      {/* <Image
+      src={'/icons/arrow.svg'}
+      alt=""
+      height={80}
+      width={80}
+      className="absolute top-0 h-50 w-50 border-2 border-black"
+      /> */}
+      
+        <div className={`flex flex-col ${RobotoFont.className} font-bold`}>
           <p className="text-7xl">
 
           <CountUp
@@ -31,7 +40,7 @@ const Aboutmesection = () => {
           </p>
           <p className={`${CormorantGaramond.className} text-4xl`}>Years</p>
         </div>
-        <div className={`flex flex-col ${PoppinsFont.className}`}>
+        <div className={`flex flex-col ${RobotoFont.className} font-bold`}>
           <p className="text-7xl">
 
           <CountUp

@@ -4,6 +4,8 @@ import {
   Archivo_Black,
   Poppins,
   Cormorant_Garamond,
+  Shadows_Into_Light,
+  Roboto
 } from "next/font/google";
 
 export const FjallaOne = Fjalla_One({
@@ -22,9 +24,17 @@ export const ArchivoBlack = Archivo_Black({
 });
 export const PoppinsFont = Poppins({
   subsets: ["latin"],
-  weight: "400",
+  weight: ["400", "500"]
 });
 export const CormorantGaramond = Cormorant_Garamond({
   subsets: ["latin"],
   weight: "600",
+});
+export const ShadowsIntoLight = Shadows_Into_Light({
+  subsets: ["latin"],
+  weight: "400",
+});
+export const RobotoFont = Roboto({
+  subsets: ["latin"],
+  weight: "400",
 });

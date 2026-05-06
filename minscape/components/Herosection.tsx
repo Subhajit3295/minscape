@@ -14,7 +14,7 @@ const Herosection = () => {
           alt="Hero Image"
           height={816}
           width={1456}
-          loading="eager"
+          loading="lazy"
           className="object-cover h-full w-full object-center"
         />
         <header className="absolute inset-0 h-full w-full backdrop-brightness-50 flex flex-col">
