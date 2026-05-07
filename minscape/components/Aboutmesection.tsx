@@ -29,11 +29,11 @@ const Aboutmesection = () => {
           <p className="text-7xl">
 
           <CountUp
-            from={1}
-            to={10}
+            from={0}
+            to={4}
             separator=","
             direction="up"
-            duration={1}
+            duration={2}
             className="count-up-text text-7xl"
             delay={0}
           />+
@@ -44,11 +44,11 @@ const Aboutmesection = () => {
           <p className="text-7xl">
 
           <CountUp
-            from={1}
-            to={100}
+            from={0}
+            to={10}
             separator=","
             direction="up"
-            duration={1}
+            duration={2}
             className="count-up-text text-7xl"
             delay={0}
           />+

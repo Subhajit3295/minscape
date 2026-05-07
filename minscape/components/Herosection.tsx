@@ -23,7 +23,7 @@ const Herosection = () => {
           >
             Minscape
           </h1>
-          <p className="text-white text-center text-xs">Interiors</p>
+          <p className="text-white text-center text-xs">Interior designiner and decorator</p>
           <div className="h-[50vh] flex flex-col justify-center items-center text-white p-5">
             <h2
               

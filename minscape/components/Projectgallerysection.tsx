@@ -1,6 +1,6 @@
 import Masonry from "./Masonry";
 import { CormorantGaramond } from "@/public/fonts/fonts";
-import AnimatedContent from "./AnimatedContent";
+// import AnimatedContent from "./AnimatedContent";
 
 const items = [
   {
@@ -34,7 +34,7 @@ const Projectgallerysection = () => {
           seleceted projects
         </h2>
 
-        <AnimatedContent
+        {/* <AnimatedContent
           distance={100}
           direction="vertical"
           reverse={false}
@@ -45,7 +45,7 @@ const Projectgallerysection = () => {
           scale={1}
           threshold={0.1}
           delay={0}
-        >
+        > */}
           <Masonry
             items={items}
             ease="power3.out"
@@ -57,7 +57,7 @@ const Projectgallerysection = () => {
             blurToFocus
             colorShiftOnHover={true}
           />
-        </AnimatedContent>
+        {/* </AnimatedContent> */}
       </main>
     </section>
   );
