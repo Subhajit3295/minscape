@@ -46,7 +46,7 @@ const Herosection = () => {
               />
             </h2>
             <p className={` ${PoppinsFont.className} text-md lg:text-lg text-center`}>
-              Luxury interior design tailored to your personality and lifestyle.
+              We create modern mood-driven interiors that blend aesthetics, comfort, and personality into timeless living experiences
             </p>
           </div>
           <div className="mt-20 w-full flex justify-center text-black">

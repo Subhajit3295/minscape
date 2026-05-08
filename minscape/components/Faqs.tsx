@@ -1,11 +1,12 @@
 import { CormorantGaramond } from "@/public/fonts/fonts";
 import { FaAngleDown } from "react-icons/fa6";
 import AnimatedContent from "./AnimatedContent";
+import { PoppinsFont } from "@/public/fonts/fonts";
 
 const faqs = [
   {
     question: "Do you charge a flat fee, hourly, or per square foot?",
-    answer: "The costing is Based on sqft and 10% of total cost.",
+    answer: "The costing is Based on square foot and 10% of total cost.",
   },
   {
     question: "Do you work within a fixed budget, or is it flexible?",
@@ -14,7 +15,7 @@ const faqs = [
   },
   {
     question: "Are there any hidden costs?",
-    answer: "Ther is no hidden costs.",
+    answer: "There are no hidden costs.",
   },
   {
     question: "Do you offer payment in installments?",
@@ -33,12 +34,26 @@ const Faqs = () => {
   return (
     <section className="w-full p-5 lg:p-25">
       <main className="h-full w-full">
-        <h2
-          className={`${CormorantGaramond.className} text-5xl lg:text-6xl text-center lg:text-left uppercase mb-10`}
+        <AnimatedContent
+          distance={100}
+          direction="vertical"
+          reverse={false}
+          duration={0.8}
+          ease="power3.out"
+          initialOpacity={0}
+          animateOpacity
+          scale={1}
+          threshold={0.1}
+          delay={0}
         >
-          frequently asked questions
-        </h2>
-        <div className="w-full flex flex-col gap-5">
+          <h2
+            className={`${CormorantGaramond.className} text-5xl lg:text-6xl text-center lg:text-left uppercase mb-10`}
+          >
+            frequently asked questions
+          </h2>
+        </AnimatedContent>
+
+        <div className={`w-full flex flex-col gap-5 ${PoppinsFont.className}`}>
           {/* <details className="w-full shadow-lg rounded-xl p-8 ">
             <summary className="text-xl font-bold list-none [&::-webkit-details-marker]:hidden cursor-pointer">
               What is Minscape?

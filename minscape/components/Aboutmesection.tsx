@@ -26,7 +26,7 @@ const Aboutmesection = () => {
             About Me
           </h2>
           <p
-            className={`${CormorantGaramond.className} text-md lg:text-2xl text-center lg:text-left mt-3`}
+            className={`${CormorantGaramond.className} text-xl lg:text-2xl text-center lg:text-left mt-3`}
           >
             I am a passionate interior designer with a keen eye for detail and a
             commitment to creating spaces that inspire and delight.
