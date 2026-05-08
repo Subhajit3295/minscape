@@ -1,5 +1,6 @@
 // import Image from "next/image";
 import Aboutmesection from "@/components/Aboutmesection";
+import Faqs from "@/components/Faqs";
 import Herosection from "@/components/Herosection";
 import Projectgallerysection from "@/components/Projectgallerysection";
 
@@ -9,6 +10,7 @@ export default function Home() {
       <Herosection/>
       <Aboutmesection/>
       <Projectgallerysection/>
+      <Faqs/>
     </main>
   );
 }
