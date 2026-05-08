@@ -3,6 +3,7 @@ import React from "react";
 import { BsChevronDown } from "react-icons/bs";
 import SplitText from "./SplitText";
 import { ArchivoBlack, PoppinsFont, CormorantGaramond } from "@/public/fonts/fonts";
+import Link from "next/link";
 
 
 const Herosection = () => {
@@ -49,9 +50,11 @@ const Herosection = () => {
             </p>
           </div>
           <div className="mt-20 w-full flex justify-center text-black">
-            <button className="px-5 py-3 bg-[#ab7444] hover:bg-[#794f2e] transition duration-300 hover:cursor-pointer">
-              View My Portfolio
-            </button>
+            <Link href="#projects">
+              <button className="px-5 py-3 bg-[#ab7444] hover:bg-[#794f2e] transition duration-300 hover:cursor-pointer">
+                View My Portfolio
+              </button>
+            </Link>
           </div>
           <div className="text-white flex justify-center mt-10">
             <BsChevronDown className="text-5xl" />

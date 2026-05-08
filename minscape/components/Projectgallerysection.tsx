@@ -25,7 +25,7 @@ const items = [
 
 const Projectgallerysection = () => {
   return (
-    <section className="p-5 lg:p-25 w-full h-screen">
+    <section className="p-5 lg:p-25 w-full h-screen" id="projects">
       <main className="w-full">
         <AnimatedContent
           distance={100}
@@ -44,18 +44,18 @@ const Projectgallerysection = () => {
           >
             seleceted projects
           </h2>
+        </AnimatedContent>
           <Masonry
             items={items}
             ease="power3.out"
             duration={0}
             stagger={0.05}
-            animateFrom="center"
-            scaleOnHover
+            animateFrom={undefined}
+            scaleOnHover={true}
             hoverScale={0.95}
-            blurToFocus
+            blurToFocus={true}
             colorShiftOnHover={true}
           />
-        </AnimatedContent>
 
         {/* <AnimatedContent
           distance={100}
