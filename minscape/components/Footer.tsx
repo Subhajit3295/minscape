@@ -26,9 +26,9 @@ const Footer = () => {
         >
           <h3 className="text-2xl lg:text-3xl font-bold mb-3">Social</h3>
           <div className="flex gap-3">
-            <FaInstagram className="text-3xl hover:cursor-pointer" />
-            <FaFacebookF className="text-3xl hover:cursor-pointer" />
-            <FaLinkedinIn className="text-3xl hover:cursor-pointer" />
+            <FaInstagram className="text-2xl hover:cursor-pointer" />
+            <FaFacebookF className="text-2xl hover:cursor-pointer" />
+            <FaLinkedinIn className="text-2xl hover:cursor-pointer" />
           </div>
         </div>
         <div
